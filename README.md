@@ -1,50 +1,73 @@
-# Welcome to your Expo app 👋
+#Essa foi a tentativa do projeto
+#RM555317 Fernando Fontes, RM556814 Guilherme Jardim
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+README - Aplicativo de Gerenciamento de Estoque
 
-## Get started
+Este README fornece um guia passo a passo para rodar o aplicativo de gerenciamento de estoque desenvolvido com React Native e Expo.
+Pré-requisitos
 
-1. Install dependencies
+Antes de começar, certifique-se de ter as seguintes ferramentas instaladas em sua máquina:
 
-   ```bash
-   npm install
-   ```
+    Node.js: (Versão LTS recomendada) - Você pode baixar o instalador oficial em https://nodejs.org/.
+    npm (geralmente instalado com o Node.js) ou yarn (https://yarnpkg.com/).
+    Expo CLI: Instalado globalmente via npm ou yarn:
+    Bash
 
-2. Start the app
+    npm install -g expo-cli
+    # ou
+    yarn global add expo-cli
 
-   ```bash
-   npx expo start
-   ```
+    Expo Go (Opcional para testar em dispositivo físico): Baixe o aplicativo "Expo Go" na App Store (iOS) ou Google Play Store (Android) no seu dispositivo.
+    Emulador Android ou Simulador iOS (Opcional para testar no computador):
+        Android: Requer a instalação do Android Studio e a configuração de um emulador.
+        iOS: Requer um Mac com o Xcode instalado para usar o simulador iOS.
 
-In the output, you'll find options to open the app in a
+Passo a Passo para Rodar o Projeto
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+    Clone o Repositório (se aplicável):
+    Se o código do projeto estiver em um repositório Git (como o GitHub), clone-o para sua máquina:
+    Bash
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+git clone <URL_DO_REPOSITORIO>
+cd estoque-app
 
-## Get a fresh project
+(Substitua <URL_DO_REPOSITORIO> pelo endereço do repositório).
 
-When you're ready, run:
+Instale as Dependências:
+Navegue até o diretório raiz do projeto (estoque-app no exemplo acima) e instale as dependências listadas no arquivo package.json usando npm ou yarn:
+Bash
 
-```bash
-npm run reset-project
-```
+npm install
+# ou
+yarn install
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Este comando baixará todas as bibliotecas necessárias para o projeto (React, React Native, Expo Router, etc.).
 
-## Learn more
+Inicie o Servidor Expo:
+No mesmo diretório raiz do projeto, execute o comando para iniciar o servidor de desenvolvimento do Expo:
+Bash
 
-To learn more about developing your project with Expo, look at the following resources:
+npx expo start
+# ou
+yarn start
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+Este comando irá abrir o Expo Developer Tools no seu navegador. Você verá um QR code e algumas opções para executar o aplicativo.
 
-## Join the community
+Execute o Aplicativo:
+Você tem as seguintes opções para visualizar e interagir com o aplicativo:
 
-Join our community of developers creating universal apps.
+    Usando o Expo Go (Dispositivo Físico):
+        Certifique-se de que seu dispositivo móvel (onde o Expo Go está instalado) esteja conectado à mesma rede Wi-Fi do seu computador.
+        Abra o aplicativo Expo Go no seu dispositivo.
+        No aplicativo Expo Go, toque em "Escanear QR Code" e aponte a câmera para o QR code exibido no Expo Developer Tools no seu navegador.
+        O aplicativo deverá abrir no seu dispositivo.
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+    Usando um Emulador Android:
+        Certifique-se de que seu emulador Android esteja configurado e rodando.
+        No Expo Developer Tools no seu navegador, você pode ver uma opção para "Run on Android emulator". Clique nela.
+        O Expo tentará abrir o aplicativo no seu emulador.
+
+    Usando um Simulador iOS (macOS necessário):
+        Certifique-se de que o Xcode esteja instalado no seu Mac.
+        No Expo Developer Tools no seu navegador, você pode ver uma opção para "Run on iOS simulator". Clique nela.
+        O Expo tentará abrir o aplicativo no simulador iOS.
