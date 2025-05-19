@@ -2,7 +2,7 @@ import { StyleSheet, Text, View } from 'react-native';
 
 export default function HomeScreen() {
   const desenvolvedores = ["Fernando Fontes RM555317, Guilherme Jardim RM556814"];
-
+//foi oque consegui prof ;(
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Desenvolvedores:</Text>
